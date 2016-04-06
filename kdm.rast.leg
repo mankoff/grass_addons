@@ -181,6 +181,7 @@ def main():
     make_frame(f, 0, 100, 0, 70)
     for m in maps:
         grass.run_command('d.rast', map=m)
+        time.sleep(0.25)
 
 
 if __name__ == "__main__":
