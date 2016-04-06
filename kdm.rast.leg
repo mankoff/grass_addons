@@ -133,7 +133,7 @@ def main():
     # draw legend
 
     # set legend vertical position and size based on number of categories
-    cats = grass.read_command('r.describe', map=maps[0], flags='1n')
+    cats = grass.read_command('r.describe', map=maps[-1], flags='1n')
     ncats = len(cats.strip().split('\n'))
 
     # Only need to adjust legend size if number of categories is between 1 and 10
