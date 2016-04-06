@@ -2,22 +2,23 @@
 
 ############################################################################
 #
-# MODULE:       kdm.rast.leg
+# MODULE:       d.rast.leg.kdm
 # AUTHOR(S):
 #               Jianping Xu and Scott Madry, Rutgers University. October 19, 1993
 #               Markus Neteler 8/2002: added simple d.legend logic
 #               Markus Neteler 10/2003: added g.parser
 #               Michael Barton 12/2004: remove reference to (null)
 #               Glynn Clements 10/2008: converted to Python
-#               Ken Mankoff 4/2016: Auto-open wx0
+#               Ken Mankoff 4/2016: Auto-open wx0, allow multiple maps
 #
-# PURPOSE:      Displays a raster map and its legend on a graphics window.
+# PURPOSE:      Displays raster map(s) and a legend on a graphics window.
 #
-# Description:  d.rast.leg clears the entire screen, divides it into a main
-#               (left) and a minor (right) frames, and then display a raster
-#               map in the main frame and the map legend in the minor frame.
-#               The user can run the program interactively or
-#               non-interactively.
+# Description:  d.rast.leg.kdm opens a window if needed, clears the
+#               entire screen, divides it into a main (left) and a
+#               minor (right) frames, and then display one or more
+#               raster maps in the main frame and the map legend of
+#               the last-listed map in the minor frame. The user can
+#               run the program interactively or non-interactively.
 #
 # See also:     d.rast, d.legend.
 #
