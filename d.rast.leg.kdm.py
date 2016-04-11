@@ -81,7 +81,7 @@ def make_frame(f, b, t, l, r):
     rl = fl + l * (fr - fl)
     rr = fl + r * (fr - fl)
     s = '%f,%f,%f,%f' % (rt, rb, rl, rr)
-    os.environ['GRASS_RENDER_FRAME'] = s
+    #os.environ['GRASS_RENDER_FRAME'] = s
 
 
 def main():
@@ -120,7 +120,7 @@ def main():
     f = tuple([float(x) for x in s.split()])
 
     grass.run_command('d.erase')
-    os.environ['GRASS_RENDER_FILE_READ'] = 'TRUE'
+    # os.environ['GRASS_RENDER_FILE_READ'] = 'TRUE'
 
     # draw title
 
